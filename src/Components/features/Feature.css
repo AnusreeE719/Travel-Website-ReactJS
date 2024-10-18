@@ -1,0 +1,35 @@
+.feature-card-section {
+  margin: 3rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  text-align: center;
+}
+.feature-card {
+  padding: 2rem;
+  color: #132043;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.feature-card:hover {
+  background: #aedefc;
+  color: white;
+  transform: translateY(-10px);
+}
+@media (max-width: 850px) {
+  .feature-card-section {
+    margin: auto;
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .feature-card{
+    padding: 1.5rem;
+  }
+  .feature-card h2{
+    font-size: 1rem;
+  }
+}
